@@ -1,0 +1,937 @@
+/*-----------------------------------------------------------------------------------
+
+Long Island
+
+----------------------------------------------------------------------------------- */
+
+/* 1. General CSS
+
+
+/*=====================
+1.General CSS start
+==========================*/
+.theme-color {
+  color: var(--theme-deafult);
+}
+
+body {
+  font-size: 14px !important;
+  font-family: $font_gilroy_regular;
+  position: relative;
+  background-color: color(bg-color) !important;
+}
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: color(orange);
+  border-radius: $b-radius-sm;
+  // background-image: -webkit-linear-gradient(
+  //   90deg,
+  //   rgba(0, 0, 0, 0.2) 25%,
+  //   transparent 25%,
+  //   transparent 50%,
+  //   rgba(0, 0, 0, 0.2) 50%,
+  //   rgba(0, 0, 0, 0.2) 75%,
+  //   transparent 75%,
+  //   transparent
+  // );
+}
+
+a {
+  color: color(white) !important;
+  text-decoration: none !important;
+}
+p {
+  font-size: 16px !important;
+  font-family: $font_gilroy_regular;
+}
+h1 {
+  font-size: $font-size-h1 !important;
+  color: color(dark-font);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  color: color(dark-font);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  color: color(dark-font);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-size: $font-size-h4;
+  color: color(dark-font);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+h5 {
+  font-size: $font-size-h4;
+  color: color(dark-font);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+h6 {
+  font-size: $font-size-h4;
+  color: color(dark-font);
+  font-weight: 400;
+  line-height: 24px;
+  line-height: 24px;
+}
+
+.btn-link {
+  background-color: color(dark-orange);
+  padding: 12px 36px;
+  border-radius: $b-radius;
+  font-family: $font_gilroy_medium;
+  color: color(white);
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.blur-effect {
+  -webkit-animation: blur 10s; /* Safari 4+ */
+  -moz-animation: blur 10s; /* Fx 5+ */
+  -o-animation: blur 10s; /* Opera 12+ */
+  animation: blur 10s;
+}
+@-webkit-keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@-moz-keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@-o-keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+.header-title {
+  text-align: center;
+  h4 {
+    color: color(dark-orange);
+    font-family: $font-Poppins;
+    font-weight: 500;
+    font-size: $font-size-xxlarge;
+  }
+  h1 {
+    color: color(dark-font);
+    font-family: $font_gilroy_bold;
+    font-size: $font-size-h1;
+  }
+}
+
+@include max-rwd(280, 1192) {
+  p {
+    font-size: 14px !important;
+    font-family: $font_gilroy_regular;
+  }
+  h1 {
+    font-size: $font-size-h1-sm !important;
+    color: color(dark-font);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: $font-size-h2-sm !important;
+    color: color(dark-font);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-size: $font-size-h3-sm !important;
+    color: color(dark-font);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+
+  h4 {
+    font-size: $font-size-h4-sm !important;
+    color: color(dark-font);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+
+  h5 {
+    font-size: $font-size-h4-sm !important;
+    color: color(dark-font);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+  }
+
+  h6 {
+    font-size: $font-size-h4-sm !important;
+    color: color(dark-font);
+    font-weight: 400;
+    line-height: 24px;
+    line-height: 24px;
+  }
+
+  .btn-link {
+    background-color: color(dark-orange);
+    padding: 6px 20px;
+    border-radius: $b-radius;
+    font-family: $font_gilroy_medium;
+    color: color(white);
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+.owl-carousel {
+  .owl-stage-outer {
+    background-color: #fff;
+  }
+}
+// input
+.input-box-card {
+  .eb-label {
+    color: color(text-gray);
+    font-family: $font_gilroy_bold;
+    font-size: 20px;
+  }
+  .eb-input-box {
+    border: 2px solid #dfc3bd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    padding: 13px 14px;
+    width: 100%;
+  }
+}
+// radio input
+.eb-radio {
+  .form-check {
+    .eb-radio-input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 12px;
+      width: 12px;
+      transition: all 0.15s ease-out 0s;
+      background: #feffff;
+      border: 1px solid #818181;
+      box-sizing: border-box;
+      border-radius: 50px;
+      display: inline-block;
+      margin-right: 0.5rem;
+      outline: none;
+    }
+    .eb-radio-input:checked::before {
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      content: '';
+      background-color: color(orange);
+      display: inline-block;
+      text-align: center;
+      border: 1px solid color(orange);
+      border-radius: 50px;
+      top: -1px;
+      left: -1px;
+    }
+
+    .form-check-label {
+      color: color(text-gray) !important;
+      font-family: $font_gilroy_regular;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+//eb-radio button
+.custom-control {
+  .custom-control-input {
+    &:checked ~ .custom-control-label::before {
+        border-color:color(orange) !important;
+        background-color: color(orange) !important;
+    }
+  }
+}
+
+
+
+// multiselect select
+.single-select {
+  .multiselect {
+    .multiselect__select {
+      &::before {
+        font-size: 25px;
+        top: 34%;
+        line-height: 23px;
+        color: transparent;
+        content: 'AS YOU LIKE';
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hldnJvbi1kb3duIj48cG9seWxpbmUgcG9pbnRzPSI2IDkgMTIgMTUgMTggOSI+PC9wb2x5bGluZT48L3N2Zz4=');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 0;
+        @include max-rwd(280, 992) {
+          font-size: 20px;
+        }
+      }
+    }
+    .multiselect__tags {
+      border: 2px solid #dfc3bd;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 13px 39px 13px 14px;
+      .multiselect__tags-wrap {
+        .multiselect__tag {
+          background: rgba(159, 156, 156, 0.24);
+          border-radius: 15.5px;
+          color: color(text-gray);
+          font-size: $font-size-small-lg;
+          font-family: $font_gilroy_regular;
+          .multiselect__tag-icon {
+            border-radius: 0px;
+            line-height: 19px;
+            &:hover {
+              background: #ddd;
+            }
+          }
+        }
+      }
+      .multiselect__single {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+.multiple-select {
+  .multiselect {
+    .multiselect__select {
+      opacity: 0;
+    }
+    .multiselect__tags {
+      border: 2px solid #dfc3bd;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      .multiselect__tags-wrap {
+        .multiselect__tag {
+          margin-bottom: 0px;
+          background: rgba(159, 156, 156, 0.24);
+          border-radius: 15.5px;
+          color: color(text-gray);
+          font-size: $font-size-small-lg;
+          font-family: $font_gilroy_regular;
+          .multiselect__tag-icon {
+            border-radius: 0px;
+            line-height: 19px;
+            &:hover {
+              background: #ddd;
+            }
+          }
+        }
+      }
+      .multiselect__single {
+        margin-bottom: 0px !important;
+      }
+      .multiselect__placeholder {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+/*==================================
+DISCOVER and news sletter CSS start
+====================================*/
+
+.discover-section,
+.new-sletter-section {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  p {
+    text-align: center;
+    color: color(#494949);
+    width: 50%;
+    margin: auto;
+    margin-top: 32px;
+    @include max-rwd(280, 1192) {
+      width: 100%;
+    }
+  }
+  .discover-search,
+  .new-sletter-search {
+    // text-align: center;
+    // min-width: 500px;
+    width: 73%;
+    margin: 40px auto;
+    position: relative;
+    @include max-rwd(280, 1192) {
+      width: 100%;
+    }
+    input {
+      @include eb-from-control(global-search-box);
+      @include max-rwd(280, 1192) {
+        height: calc(2.2em + 0.75rem + 2px);
+      }
+    }
+    button {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+    }
+  }
+  .new-sletter-search {
+    width: 50%;
+    @include max-rwd(280, 1192) {
+      width: 100%;
+    }
+  }
+}
+.new-sletter-section {
+  position: relative;
+  &::before {
+    content: '';
+    width: 210px;
+    height: 86%;
+    background: url('~assets/images/shape.svg') no-repeat;
+    top: 49px;
+    left: 23px;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+    @include max-rwd(280, 1192) {
+      display: none;
+    }
+  }
+  &::after {
+    content: '';
+    width: 210px;
+    height: 86%;
+    background: url('~assets/images/shape.svg') no-repeat;
+    top: 49px;
+    right: 23px;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+    @include max-rwd(280, 1192) {
+      display: none;
+    }
+  }
+}
+
+/*=====================
+ABOUT CSS start
+==========================*/
+.about-section {
+  margin-bottom: 30px;
+  margin-top: 120px;
+  .container {
+    position: relative;
+    .about-card {
+      display: flex;
+      align-items: center;
+      @include max-rwd(280, 1192) {
+        flex-direction: column;
+      }
+      img {
+        width: 400px;
+        height: 350px;
+        margin: 10px;
+        @include max-rwd(280, 1192) {
+          width: 100%;
+        }
+      }
+    }
+    .about-detail-card {
+      position: absolute;
+      right: 0;
+      bottom: -50px;
+      background-color: color(white);
+      width: 600px;
+      padding: 44px 17px 17px 55px;
+      h4 {
+        color: color(dark-orange);
+        font-family: $font-Poppins;
+        font-weight: 500;
+        font-size: $font-size-xxlarge;
+      }
+      h3 {
+        color: color(dark-font);
+        font-family: $font_gilroy_bold;
+        font-size: $font-size-h1;
+        line-height: 42px;
+        margin-top: 10px;
+      }
+      p {
+        margin-top: 20px;
+        color: color(black);
+      }
+      @include max-rwd(280, 1192) {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+    &::after {
+      content: '';
+      width: 210px;
+      height: 50%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -134px;
+      right: -55px;
+      position: absolute;
+      display: inline-block;
+      z-index: -1;
+      @include max-rwd(280, 1192) {
+        bottom: -329px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+/*=====================
+SERVICE CSS start
+==========================*/
+
+.service-section {
+  margin-top: 160px;
+  .service-container {
+    margin-top: 30px;
+    @include max-rwd(260, 992) {
+      padding-left: 20px;
+      padding-right: 15px;
+    }
+    .service-card {
+      position: relative;
+      background: #ffffff;
+      box-shadow: 0px 4px 48px rgba(62, 70, 255, 0.12);
+      border-radius: 10px;
+      text-align: center;
+      padding: 30px 30px;
+      margin: 10px 25px;
+      flex: 0 0 28%;
+      max-width: 28%;
+      @include max-rwd(260, 992) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      h5 {
+        color: color(orange);
+        font-size: $font-size-xxlarge;
+        font-family: $font_gilroy_bold;
+        margin-bottom: 30px;
+      }
+      p {
+        text-align: center;
+        color: color(black);
+        font-size: $font-size-large;
+        margin-top: 30px;
+        font-family: $font_gilroy_regular;
+      }
+      &:first-child {
+        &::after {
+          content: '';
+          width: 210px;
+          height: 50%;
+          background: url('~assets/images/shape.svg') no-repeat;
+          top: -70px;
+          left: -54px;
+          position: absolute;
+          display: inline-block;
+          z-index: -1;
+          @include max-rwd(280, 1192) {
+            top: -68px;
+            left: -21px;
+            display: none;
+          }
+        }
+      }
+      &:last-child {
+        &::after {
+          content: '';
+          width: 210px;
+          height: 50%;
+          background: url('~assets/images/shape.svg') no-repeat;
+          bottom: -84px;
+          right: -70px;
+          position: absolute;
+          display: inline-block;
+          z-index: -1;
+          @include max-rwd(280, 1192) {
+            bottom: -63px;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+/*=====================
+.WHY US CSS start
+==========================*/
+
+.testimonial-section {
+  margin-top: 100px;
+  .testimonial-left {
+    padding: 50px 20px 20px 20px;
+    @include max-rwd(280, 1192) {
+      padding: 30px 10px 10px;
+    }
+    h4 {
+      font-size: $font-size-large;
+      color: color(black);
+      font-family: $font_gilroy_bold;
+    }
+    .comment {
+      font-size: $font-size-large;
+      color: color(black);
+      font-family: $font_gilroy_regular;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .testimonial-user {
+      @include max-rwd(280, 1192) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .user-avatar {
+        overflow: hidden;
+        min-width: 50px;
+        min-height: 50px;
+        margin-bottom: 15px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      h4 {
+        font-size: $font-size-large;
+        color: color(black);
+        font-family: $font_gilroy_medium;
+      }
+      p {
+        font-size: $font-size-small !important;
+        color: color(black);
+        font-family: $font_gilroy_medium;
+        margin-bottom: 7px;
+      }
+    }
+  }
+  .testimonial-property-img-box {
+    position: relative;
+    .property-img {
+      position: relative;
+      overflow: hidden;
+      background-color: color(grey-500);
+      border-radius: $b-radius-sm;
+      img {
+        height: auto;
+        max-height: inherit;
+        width: 100%;
+      }
+    }
+    .property-rating {
+      position: absolute;
+      right: 490px;
+      bottom: -32px;
+      background-color: color(white);
+      width: 200px;
+      height: 80px;
+      box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.06);
+      border-radius: 5px;
+      text-align: center;
+      padding: 16px;
+      @include max-rwd(280, 1192) {
+        right: 23%;
+      }
+      h4 {
+        color: color(grey-800);
+        font-size: $font-size-large;
+        font-family: $font_gilroy_bold;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .star {
+    display: flex;
+    img {
+      width: 20px;
+    }
+  }
+  .owl-carousel.owl-loaded {
+    min-height: 500px !important;
+    @include max-rwd(280, 1192) {
+      min-height: 740px !important;
+    }
+    .owl-stage-outer {
+      min-height: 500px !important;
+      @include max-rwd(280, 1192) {
+        min-height: 740px !important;
+      }
+    }
+  }
+}
+
+/*=====================
+FEATURE CSS start
+==========================*/
+
+.feature-section {
+  margin-top: 100px;
+  .feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    &_left {
+      h4 {
+        color: color(dark-orange);
+        font-family: $font-Poppins;
+        font-weight: 500;
+        font-size: $font-size-xxlarge;
+      }
+      h1 {
+        color: color(dark-font);
+        font-family: $font_gilroy_bold;
+        font-size: $font-size-h1;
+        line-height: 42px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .eb-next {
+    right: 10px;
+    top: -50px;
+    position: absolute;
+    cursor: pointer;
+    @include max-rwd(260, 992) {
+      top: -100px;
+    }
+  }
+  .eb-prev {
+    right: 65px;
+    top: -50px;
+    position: absolute;
+    cursor: pointer;
+    @include max-rwd(260, 992) {
+      top: -100px;
+    }
+  }
+}
+
+/*=====================
+HOW IT WORKS CSS start
+==========================*/
+
+.work-section {
+  margin-top: 120px;
+  .work-container {
+    margin-top: 30px;
+    @include max-rwd(260, 992) {
+      padding-left: 20px;
+      padding-right: 15px;
+    }
+    .work-card {
+      position: relative;
+      background: #ffffff;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 20px;
+      h6 {
+        color: color(orange);
+        font-size: $font-size-large;
+        font-family: $font_gilroy_medium;
+        margin-bottom: 10px;
+      }
+      h5 {
+        color: color(black);
+        font-size: $font-size-xxlarge;
+        font-family: $font_gilroy_bold;
+        margin-bottom: 10px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      p {
+        text-align: center;
+        color: color(black);
+        font-size: $font-size-large;
+        margin-top: 10px;
+        font-family: $font_gilroy_regular;
+      }
+    }
+  }
+}
+
+/*=====================
+.WHY US CSS start
+==========================*/
+.why-us-section {
+  margin-top: 141px;
+  .container {
+    .why-use-right {
+      width: 90%;
+      margin-left: auto;
+      @include max-rwd(260, 992) {
+        width: 100%;
+      }
+      .header-title {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+      .accordion {
+        .accordion-list {
+          border-bottom: 2px solid rgba(250, 193, 182, 0.58);
+          &:last-child {
+            border-bottom: none;
+          }
+          .accordion-tab {
+            outline: none;
+            padding: 15px 0px;
+            img {
+              transition: 0.5s ease-in;
+            }
+            h3 {
+              font-size: $font-size-xlarge;
+              font-family: $font_gilroy_medium;
+              color: color(black);
+            }
+          }
+          .not-collapsed {
+            img {
+              transform: rotate(180deg);
+              transition: 0.5s ease-out;
+            }
+          }
+          .card-text {
+            padding-left: 35px;
+            padding: 10px 5px;
+          }
+        }
+      }
+    }
+    &::before {
+      content: '';
+      width: 210px;
+      height: 50%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      top: -60px;
+      left: -87px;
+      position: absolute;
+      display: inline-block;
+      z-index: -1;
+      @include max-rwd(280, 1192) {
+        bottom: -329px;
+        right: 10px;
+      }
+    }
+  }
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.error-msg {
+  color: rgb(228 19 19) !important;
+}
+
+.vue-otp-2 {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      max-width: 30px;
+      padding: 8px 8px;
+      font-size: 10px;
+      border-radius: 3px;
+      border: 1px solid #cecece;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

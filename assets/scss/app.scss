@@ -1,0 +1,36 @@
+/* import scss utilities */
+@import './theme/variables';
+@import './theme/mixins.scss';
+@import './theme/icons';
+@import './theme/spacing';
+@import './theme/border';
+
+/* import scss component */
+@import './theme/component/header';
+@import './theme/component/footer';
+@import './theme/component/normal_card';
+@import './theme/component/property_card';
+@import './theme/component/searchBox';
+@import './theme/component/wizard';
+
+/* import scss component */
+@import './theme/pages/properties';
+@import './theme/pages/about';
+@import './theme/pages/auth';
+@import './theme/pages/contact';
+@import './theme/pages/blog';
+@import './theme/pages/chat';
+@import './theme/pages/chat-list';
+@import './theme/pages/profile';
+
+/* import scss addmin */
+@import './theme/admin/index';
+
+:root {
+  --theme-deafult: #ff4c3b;
+  --theme-deafult: #eb594c;
+  // This gradient color only for gym layout
+  --theme-gradient1: #01effc;
+  --theme-gradient2: #485ff2;
+}
+@import './theme/style';

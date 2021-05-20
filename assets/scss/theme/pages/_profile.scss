@@ -1,0 +1,89 @@
+.Profile-section-page {
+  padding: 50px 0px;
+  .Profile-section-top {
+    padding: 50px 0px;
+  }
+  .Profile-section-details {
+    .view-data {
+      padding: 10px 0px;
+      border-bottom: 1px solid #ffdcd5;
+    }
+    .profile-upload-box {
+      .profile-upload {
+        width: 170px;
+        height: 170px;
+        background: #ffdcd5;
+        border: 2px dashed #d8654f;
+        border-radius: 10px;
+        overflow: hidden;
+        .profile-picture {
+          height: 200px;
+        }
+        &:hover .profile-close-img {
+          opacity: 1;
+          transition: 1s;
+        }
+        .profile-close-img {
+          opacity: 0;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          background:color(orange);
+          width: 25px;
+          height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 30px;
+          font-size: 11px;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      h5 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: color(blue-600);
+        font-family: $font_gilroy_medium;
+        font-size: $font-size-xlarge;
+      }
+      p {
+        margin-top: 20px;
+        color: color(gray-700);
+        font-size: $font-size-large;
+      }
+    }
+  }
+}
+
+.eb-form {
+  .form-control {
+    border: 2px solid #f36f56 !important;
+    border-radius: 5px !important;
+    &:focus {
+      z-index: 0 !important;
+      box-shadow: none !important;
+    }
+  }
+  .eb-input-label {
+    color: color(black);
+    font-size: $font-size-large;
+    font-family: $font_gilroy_bold;
+  }
+  .eb-input-group {
+    position: relative;
+    .auth-icon {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      z-index: 1;
+    }
+  }
+  .input-group-text {
+    background-color: transparent !important;
+    border-right: none;
+    border-left: 2px solid #f36f56 !important;
+    border-top: 2px solid #f36f56 !important;
+    border-bottom: 2px solid #f36f56 !important;
+  }
+}

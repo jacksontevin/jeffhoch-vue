@@ -1,0 +1,209 @@
+.blogs-section-page {
+  .blogs-section-header {
+    background-color: #193253;
+    padding: 116px 0px;
+    position: relative;
+    background-image: url('./assets/images/blog-slider.png');
+    background-repeat: no-repeat;
+    .blogs-title {
+      position: relative;
+      color: color(white);
+      padding-left: $font-size-xxlarge;
+      &::before {
+        content: '';
+        height: 60px;
+        width: 3px;
+        position: absolute;
+        background-color: #f36f56;
+        top: -8px;
+        left: 0;
+        border-radius: 8px;
+      }
+    }
+  }
+  .blogs-section-top {
+    padding: 170px 0px;
+    position: relative;
+    @include max-rwd(280, 1192) {
+      padding: 60px 0px;
+    }
+    .container {
+      position: relative;
+      .blogs-us-info {
+        h4 {
+          color: color(dark-orange);
+          font-family: $font-Poppins;
+          font-weight: 500;
+          font-size: $font-size-xxlarge;
+        }
+        h3 {
+          color: color(dark-font);
+          font-family: $font_gilroy_bold;
+          font-size: $font-size-h1;
+          line-height: 42px;
+          margin-top: 10px;
+        }
+        p {
+          margin-top: 20px;
+          color: color(black);
+        }
+      }
+      &::after {
+        content: '';
+        width: 210px;
+        height: 100%;
+        background: url('~assets/images/shape.svg') no-repeat;
+        top: -71px;
+        left: -58px;
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+        @include max-rwd(280, 1192) {
+          display: none;
+        }
+      }
+    }
+    &::before {
+      content: '';
+      width: 103px;
+      height: 56%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -71px;
+      right: 11px;
+      position: absolute;
+      display: inline-block;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+  .blogs-des-section {
+    position: relative;
+    padding: 50px 0px 30px 0px;
+    h2 {
+      font-size: 46px;
+      color: color(black);
+    }
+    .date {
+      color: color(grey03);
+      font-size: $font-size-h4;
+      font-family: $font_gilroy_regular;
+    }
+    &::after {
+      content: '';
+      width: 103px;
+      height: 129%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -71px;
+      right: 11px;
+      position: absolute;
+      display: inline-block;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+  .blogs-des {
+    padding: 10px 0px 50px 0px;
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      background: url('~assets/images/shape.svg') no-repeat;
+      position: absolute;
+      display: inline-block;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+    &::before {
+      width: 103px;
+      height: 69%;
+      bottom: -71px;
+      left: 11px;
+    }
+    &::after {
+      width: 103px;
+      height: 34%;
+      bottom: -71px;
+      right: 11px;
+    }
+    .bg-img {
+      min-width: 100%;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      min-height: 240px;
+      height: 100%;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      @include rwd(1440) {
+        background-size: cover;
+      }
+    }
+    h3 {
+      font-size: $font-size-h3;
+      color: color(black);
+      font-family: $font_gilroy_bold;
+    }
+    p {
+      font-size: $font-size-xxlarge;
+      color: color(black);
+      font-family: $font_gilroy_regular;
+    }
+  }
+  .blog-slider-by-id {
+    position: relative;
+    &::after {
+      content: '';
+      width: 103px;
+      height: 48%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -71px;
+      right: 11px;
+      position: absolute;
+      display: inline-block;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+  .blogs-section-service {
+    .blogs-us-info {
+      h4 {
+        color: color(dark-orange);
+        font-family: $font-Poppins;
+        font-weight: 500;
+        font-size: $font-size-xxlarge;
+      }
+      h3 {
+        color: color(dark-font);
+        font-family: $font_gilroy_bold;
+        font-size: $font-size-h1;
+        line-height: 42px;
+        margin-top: 10px;
+      }
+      p {
+        margin-top: 20px;
+        color: color(black);
+      }
+      .blogs-popular-scroll {
+        min-height: 430px;
+        max-height: 430px;
+        overflow: auto;
+        .media {
+          img {
+            width: 100px;
+            height: 58px;
+            border-radius: 10px;
+          }
+          h5 {
+            color: color(grey02);
+            font-family: $font_gilroy_bold;
+            font-size: $font-size-h4;
+          }
+        }
+      }
+    }
+  }
+}

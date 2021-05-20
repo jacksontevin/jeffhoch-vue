@@ -1,0 +1,95 @@
+/* colors */
+$colors: (
+  // primary: #005DFF,
+  // primary-light: lighten(#005DFF, 40%),
+  // primary-dark: darken(#005DFF, 40%),
+  // accent: #FFF6BB,
+  white: #ffffff,
+  white-dark: #eeeeee,
+  gray-light-bg: #FFDCD5,
+  black: #000000,
+  grey01: #111111,
+  grey02: #0A0B25,
+  grey03: #4D4D4D,
+  dark-font: #282827,
+  grey-dark: #2d2a25,
+  font-color: #333333,
+  grey: #777777,
+  grey-light: #DEDEDE,
+  grey-500: #C4C4C4,
+  grey-800: #606060,
+  border: #dddada,
+  round-border: #dddddd,
+  grey-lighter: #f9f9f9,
+  theme-deafult: #ff4c3b,
+  grey-darken: #393230,
+  grey-link: #948e8c,
+  grey-font: #938d8c,
+  dark-footer: #2e2726,
+  form-bg: #f5f2f2,
+  grey-shade: #7f786d,
+  darker-footer: #25221e,
+  border-color: #38352f,
+  border-grey: #f1f5f4,
+  font-grey: #aaaaaa,
+  star-yellow: #ffa200,
+  border-bottom-g: #525252,
+  top-header: #193253,
+  header-font: #999999,
+  shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1),
+  box-border: #ecececa8,
+  grey-about: #f7f7f7,
+  sidebar-border: #f5f2f2,
+  sidebar-color: #938d8c,
+  modal: #ffba00,
+  dark-orange: #ff7557,
+  orange: #F36F56,  
+  text-orange: #D8654F,
+  text-gray: #4C4C4C,
+  gray-700: #818181,
+  blue-600: #203858,
+  blue-800:#444B8C,
+  bg-color: #FCFAFA,
+  light-grey: #d0edff,
+  pink: #f1e7e6,
+  blue: #bfbfbf,
+  icon: #6f6f6f,
+  color-red: #ff4c3b,
+  gradient1: #01effc,
+  gradient2: #485ff2,
+  left-sidebar: #2b2b2b,
+  // dark layput variable //
+  dark-body: #2b2b2b,
+  dark-top: #232323,
+  dark-border: #404040,
+  dark-link: #cbcbcb,
+  dark-span: #929292,
+  dark-footer-bg: #383838,
+  white-1: #f1f3f5,
+  chat-msg-left: #F4F2F2,
+  chat-msg-right-text: #887470,
+  blue-900:#304664,
+  tbl-text:#565A64
+);
+
+// =============================================================================
+// Color classes
+// =============================================================================
+
+// @each $name, $hex in $colors {
+//     .has-background-#{"" + $name} {
+//         background-color: $hex;
+//     }
+//     .has-text-#{"" + $name} {
+//         color: $hex;
+//     }
+//     .has-text-#{"" + $name}-hover {
+//         &:hover {
+//             color: $hex;
+//         }
+//     }
+// }
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

@@ -1,0 +1,5 @@
+export const SET_USER = 'SET_USER'
+export const SET_LOGIN_STATUS = 'SET_LOGIN_STATUS'
+export const SET_LOGGEDIN_USER = 'SET_LOGGEDIN_USER'
+export const SET_LOGIN_TYPE = 'SET_LOGIN_TYPE'
+export const SET_USER_LOGOUT = 'SET_USER_LOGOUT'

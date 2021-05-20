@@ -1,0 +1,191 @@
+@mixin property-card($card) {
+    @if $card == 'property-lg-card' {
+      background: #ffffff;
+      box-shadow: 0px 3.69571px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 6.72414px;
+      margin: 10px;
+      .property-top-img {
+        background: #e5e5e5;
+        border-radius: 6.72414px;
+        overflow: hidden;
+        max-height: 250px;
+        position: relative;
+        img {
+          border-radius: 6.72414px;
+          max-height: 223px;
+          height: 223px;
+          width: 100%;
+          object-fit: fill;
+        }
+        .property-tag {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          /* padding: 10px; */
+          padding: 5px 18px;
+          border-radius: 0px 10px 0px 5px;
+          color: #fff;
+        }
+        .orange-tag {
+          background: color(orange);
+        }
+        .blue-tag {
+          background: color(blue-800);
+        }
+        .lease-tag {
+          background: forestgreen;
+        }
+      }
+      .property-body {
+        padding: 20px;
+        .property-body-title {
+          h6 {
+            font-size: $font-size-large;
+            font-family: $font_gilroy_medium;
+            color: color(black);
+          }
+          .property-properties {
+            display: flex;
+            justify-content: space-between;
+            span {
+              color: color(text-orange);
+              font-family: $font_gilroy_light;
+              font-size: $font-size-small;
+            }
+          }
+        }
+        hr {
+          background-color: #aaa2a2;
+          height: 1px;
+          border: 0;
+        }
+        .property-body-plan {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          .payment .ready-to-move {
+            color: color(text-gray);
+            font-family: $font_gilroy_medium;
+            font-size: $font-size-small;
+          }
+        }
+        .property-body-price {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .rate .plan {
+            font-size: $font-size-large;
+            font-family: $font_gilroy_medium;
+          }
+          .rate {
+            color: color(blue-600);
+          }
+          .plan {
+            color: color(gray-700);
+          }
+        }
+      }
+    } @else if $card == 'property-md-card' {
+      background: #ffffff;
+      box-shadow: 0px 3.69571px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 6.72414px;
+      margin: 10px;
+      .property-top-img {
+        background: #e5e5e5;
+        border-radius: 6.72414px;
+        overflow: hidden;
+        max-height: 250px;
+        position: relative;
+        img {
+          border-radius: 6.72414px;
+          max-height: 223px;
+          height: 223px;
+          width: 100%;
+          object-fit: fill;
+        }
+        .property-tag {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          /* padding: 10px; */
+          padding: 5px 18px;
+          border-radius: 0px 10px 0px 5px;
+          color: #fff;
+        }
+        .orange-tag {
+          background: color(orange);
+        }
+        .blue-tag {
+          background: color(blue-800);
+        }
+        .lease-tag {
+          background: forestgreen;
+        }
+      }
+      .property-body {
+        padding: 20px;
+        .property-body-title {
+          h6 {
+            font-size: $font-size-small;
+            font-family: $font_gilroy_bold;
+            color: color(black);
+          }
+          .property-properties {
+            display: flex;
+            justify-content: space-between;
+            span {
+              color: color(text-orange);
+              font-family: $font_gilroy_light;
+              font-size: $font-size-small-md;
+              max-width: 150px;
+            }
+          }
+        }
+        hr {
+          background-color: #aaa2a2;
+          height: 1px;
+          border: 0;
+        }
+        .property-body-plan {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          .payment {
+            color: color(text-gray);
+            font-family: $font_gilroy_medium;
+            font-size: $font-size-small-md;
+          }
+          .ready-to-move {
+            color: color(text-gray);
+            font-family: $font_gilroy_medium;
+            font-size: $font-size-small-md;
+          }
+        }
+        .property-body-price {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .rate {
+            font-size: $font-size-small-lg;
+            font-family: $font_gilroy_medium;
+          }
+          .plan {
+            font-size: $font-size-small-lg;
+            font-family: $font_gilroy_medium;
+          }
+          .rate {
+            color: color(blue-600);
+          }
+          .plan {
+            color: color(gray-700);
+          }
+        }
+        .property-detail-btn {
+          .btn-link {
+            font-size: $font-size-small-md;
+            padding: 8px 36px;
+          }
+        }
+      }
+    }
+  }

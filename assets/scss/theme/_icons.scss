@@ -1,0 +1,9 @@
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+// ex => $name = eye; $glyph => \f112; $icons => array of content 
+@each $name, $glyph in $icons {
+    .icon-#{$name}:before {
+        display: inline-block;
+        font-family: "Icon Font";
+        content: $glyph;
+    }
+}

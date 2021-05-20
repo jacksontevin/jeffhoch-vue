@@ -1,0 +1,160 @@
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+  @include max-rwd(260, 992) {
+    height: 130vh;
+  }
+  .login-box {
+    background: #ffffff;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .auth-close-icon {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+      @include max-rwd(260, 992) {
+        top: 7px;
+        right: 7px;
+      }
+    }
+    .auth-container {
+      // auth box
+      .auth-box {
+        position: relative;
+        text-align: center;
+        padding: 10px 30px;
+        h1 {
+          font-family: $font_gilroy_bold;
+          font-size: 48px;
+          color: #4f4e4d;
+        }
+        p {
+          font-family: $font_gilroy_regular;
+          font-size: $font-size-xlarge;
+          text-align: center;
+          color: #898989;
+        }
+        .auth-form {
+          a {
+            color: color(orange) !important;
+          }
+          .auth-footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include max-rwd(260, 992) {
+              flex-direction: column;
+            }
+            .soical-icon {
+              display: inline-flex;
+              list-style: none;
+              align-items: center;
+              margin-bottom: 0px;
+              li {
+                padding: 10px;
+              }
+            }
+          }
+        }
+        .radio-user-type {
+          .user-type {
+            input[type="radio"] {
+              display: none;
+              &:not(:disabled) ~ label {
+                cursor: pointer;
+              }
+              &:disabled ~ label {
+                color: hsla(150, 5%, 75%, 1);
+                border-color: hsla(150, 5%, 75%, 1);
+                box-shadow: none;
+                cursor: not-allowed;
+              }
+            }
+            label {
+              padding: 30px 50px;
+              background-color: color(white);
+              box-shadow: 0px 4px 16px rgba(255, 117, 87, 0.24);
+              border-radius: $b-radius-sm;
+              margin: 30px;
+              text-align: center;
+              height: 100%;
+              display: block;
+              background: white;
+              margin-bottom: 0px;
+              //margin: 1rem;
+              text-align: center;
+              box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+              position: relative;
+            }
+            input[type="radio"]:checked + label {
+              background: #f4f4f4;
+              color: hsla(215, 0%, 100%, 1);
+              // box-shadow: 0px 0px 20px hsla(150, 100%, 50%, 0.75);
+            }
+            input[type="radio"]#control_05:checked + label {
+              background: red;
+              border-color: red;
+            }
+            h6 {
+              margin-top: 10px;
+              color: color(orange);
+              font-size: $font-size-xlarge;
+              font-family: $font_gilroy_medium;
+            }
+          }
+        }
+      }
+      .confirm-mail-box {
+        text-align: center;
+        padding: 100px 20px;
+        h1 {
+          font-family: $font_gilroy_bold;
+        }
+      }
+    }
+  }
+  .confirm-mail-box-bg {
+    background: url('~assets/images/mail-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+  }
+  .form-control {
+    border: 2px solid #f36f56 !important;
+    border-radius: 5px !important;
+    padding-left: 50px;
+    &:focus {
+      z-index: 0 !important;
+      box-shadow: none !important;
+    }
+  }
+  .eb-input-label {
+    color: color(grey03);
+    font-size: $font-size-large;
+    font-family: $font_gilroy_medium;
+  }
+  .eb-input-group {
+    position: relative;
+    .auth-icon {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      z-index: 1;
+    }
+  }
+  .input-group-text {
+    background-color: transparent !important;
+    border-right: none;
+    border-left: 2px solid #f36f56 !important;
+    border-top: 2px solid #f36f56 !important;
+    border-bottom: 2px solid #f36f56 !important;
+  }
+}

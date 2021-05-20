@@ -1,0 +1,147 @@
+.contact-section-page {
+  .contact-section-header {
+    background-color: #193253;
+    padding: 116px 0px;
+    position: relative;
+    background-image: url('./assets/images/blog-slider.png');
+    background-repeat: no-repeat;
+    .title {
+      position: relative;
+      color: color(white);
+      padding-left: $font-size-xxlarge;
+      &::before {
+        content: '';
+        height: 60px;
+        width: 3px;
+        position: absolute;
+        background-color: #f36f56;
+        top: -8px;
+        left: 0;
+        border-radius: 8px;
+      }
+    }
+  }
+  .contact-section-top {
+    padding: 170px 0px;
+    position: relative;
+    .container {
+      position: relative;
+      .contact-us-card,
+      .contact-us-info {
+        padding: 30px;
+        background-color: color(white);
+        box-shadow: $box-shadow-wt-sm;
+        border-radius: $b-radius-sm;
+        h4 {
+          color: color(dark-orange);
+          font-family: $font-Poppins;
+          font-weight: 500;
+          font-size: $font-size-xxlarge;
+          text-align: center;
+        }
+        h3 {
+          text-align: center;
+          color: color(dark-font);
+          font-family: $font_gilroy_bold;
+          font-size: $font-size-h1;
+          line-height: 42px;
+          margin-top: 10px;
+        }
+        .form-control {
+          border: 2px solid #f36f56 !important;
+          border-radius: 5px !important;
+          &:focus {
+            z-index: 0 !important;
+            box-shadow: none !important;
+          }
+        }
+        .eb-input-label {
+          color: color(grey03);
+          font-size: $font-size-large;
+          font-family: $font_gilroy_medium;
+        }
+        .eb-input-group {
+          position: relative;
+          .auth-icon {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+            z-index: 1;
+          }
+        }
+        .input-group-text {
+          background-color: transparent !important;
+          border-right: none;
+          border-left: 2px solid #f36f56 !important;
+          border-top: 2px solid #f36f56 !important;
+          border-bottom: 2px solid #f36f56 !important;
+        }
+        //   right side ard
+        .contact-us-add-title {
+          font-size: $font-size-xlarge;
+          color: color(black);
+          font-family: $font_gilroy_bold;
+        }
+        .contact-us-add-1 {
+          font-size: $font-size-large;
+          color: color(blue-600);
+          font-family: $font_gilroy_medium;
+        }
+        .contact-us-add-2 {
+          font-size: $font-size-base;
+          color: color(black);
+          font-family: $font_gilroy_regular;
+          margin: 10px 0px;
+        }
+        .contact-us-add-mail {
+          color: color(text-orange);
+          font-size: $font-size-small;
+        }
+      }
+      &::after {
+        content: '';
+        width: 210px;
+        height: 100%;
+        background: url('~assets/images/shape.svg') no-repeat;
+        top: -71px;
+        left: -58px;
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+        @include max-rwd(280, 1192) {
+          display: none;
+        }
+      }
+    }
+    &::before {
+      content: '';
+      width: 98px;
+      height: 56%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -71px;
+      right: 12px;
+      position: absolute;
+      display: inline-block;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+  .contact-section-map {
+    position: relative;
+    &::before {
+      content: '';
+      width: 169px;
+      height: 45%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -71px;
+      left: -58px;
+      position: absolute;
+      display: inline-block;
+      z-index: -1;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+
+// border radius device
+@include sm {
+    @for $i from 1 through 100 {
+        .b-radius-sm--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+        .b-radius-none_sm--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+      }
+}
+@include md {
+    @for $i from 1 through 100 {
+        .b-radius-md--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+        .b-radius-none_md--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+      }
+}
+@include lg {
+    @for $i from 1 through 100 {
+        .b-radius-lg--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+        .b-radius-none_lg--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+      }
+}
+@include xl {
+    @for $i from 1 through 100 {
+        .b-radius-xl--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+        .b-radius-none_xl--#{5 * $i} {
+            border-radius: 5px * $i !important;
+        }
+      }
+}

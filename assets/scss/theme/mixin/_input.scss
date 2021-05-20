@@ -1,0 +1,81 @@
+@mixin eb-from-control($type) {
+  @if $type == 'global-search-box' {
+    display: block;
+    width: 100%;
+    height: calc(3em + 0.75rem + 2px);
+    padding: 10px 160px 10px 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    background: #ffffff;
+    box-shadow: 0px 7px 100px rgba(255, 117, 87, 0.24);
+    border-radius: 10px;
+  } @else if $type == 'search-box' {
+    display: block;
+    width: 100%;
+    height: calc(3em + 0.75rem + 2px);
+    padding: 10px 80px 10px 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
+    outline: none;
+    color: color(gray-700);
+    background: rgba(255, 255, 255, 0.33);
+    border: 2px solid #dfc3bd;
+    box-sizing: border-box;
+    border-radius: 5px;
+  } @else if $type == 'input-box' {
+    display: block;
+    width: 100%;
+    height: calc(3em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
+    outline: none;
+    color: color(gray-700);
+    background: rgba(255, 255, 255, 0.33);
+    border: 2px solid #dfc3bd;
+    box-sizing: border-box;
+    border-radius: 5px;
+  } @else if $type == 'input-box-icon' {
+    display: block;
+    width: 100%;
+    height: calc(1.4em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: color(gray-700);
+    box-sizing: border-box;
+    border: 2px solid #f36f56 !important;
+    border-radius: 5px !important;
+    padding-left: 50px;
+    &:focus {
+      z-index: 0 !important;
+      box-shadow: none !important;
+    }
+  }@else if $type == 'admin-input-box-icon' {
+    display: block;
+    width: 100%;
+    height: calc(1.4em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: color(gray-700);
+    box-sizing: border-box;
+    border: 2px solid #f36f56 !important;
+    border-radius: 5px !important;
+    padding-right: 50px;
+    &:focus {
+      z-index: 0 !important;
+      box-shadow: none !important;
+    }
+  }
+}

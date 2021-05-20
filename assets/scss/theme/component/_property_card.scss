@@ -1,0 +1,10 @@
+.property-card-lg {
+  .property-card {
+    @include property-card(property-lg-card);
+  }
+}
+.property-card-md {
+  .property-card {
+    @include property-card(property-md-card);
+  }
+}

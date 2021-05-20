@@ -1,0 +1,108 @@
+.eb-admin-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  min-height: 70px;
+  background: color(white);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.11);
+
+  .profile-dropdown {
+    position: relative;
+    .nav-user {
+      min-height: 56px;
+      display: flex;
+      .user-profile {
+        .user-profile-img {
+          position: relative;
+          img {
+            width: 40px;
+            height: 40px;
+            position: relative;
+          }
+          &:after {
+            display: none;
+          }
+        }
+        .pro-user-name {
+          color: color(blue-900);
+          font-size: 16px;
+          font-family: $font_gilroy_medium;
+        }
+        .eb-chevron {
+          stroke: color(blue-600);
+          margin-top: -16px;
+        }
+      }
+    }
+    .dropdown-menu {
+      animation-name: DropDownSlide;
+      animation-duration: 0.3s;
+      animation-fill-mode: both;
+      box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.25);
+      border-radius: $b-radius-sm;
+      top: auto !important;
+      .dropdown-item {
+        font-family: $font_gilroy_medium;
+        font-size: $font-size-base;
+        line-height: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* identical to box height */
+        color: #304664 !important;
+        a {
+          color: #304664 !important;
+        }
+        &:hover {
+          background-color: #f0f0f0 !important;
+        }
+      }
+    }
+    @keyframes DropDownSlide {
+      100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      0% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+    }
+  }
+  .notification-bell {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      .icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border-radius: 99999px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        background-color: color(gray-light-bg);
+      }
+  }
+}
+.eb-admin-header.eb-header-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  align-items: center;
+}
+.dropdown-toggle {
+  &::after {
+    display: none;
+  }
+}

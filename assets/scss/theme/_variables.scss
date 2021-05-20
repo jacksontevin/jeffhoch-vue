@@ -1,0 +1,73 @@
+//fonts
+@import './fonts';
+@import './colors.scss';
+
+// $font_0: Lato;
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font_gilroy_bold: Gilroy-Bold !default;
+$font_gilroy_heavy: Gilroy-Heavy !default;
+$font_gilroy_light: Gilroy-Light !default;
+$font_gilroy_medium: Gilroy-Medium !default;
+$font_gilroy_regular: Gilroy-Regular !default;
+$font-awesome: FontAwesome;
+$font-Poppins: Poppins;
+$font-family-base: $font_gilroy_regular !default;
+
+$font-size-base: 14px !default;
+$font-size-xxlarge: ceil(($font-size-base * 1.4)) !default; // ~20px
+$font-size-xlarge: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-large: floor(($font-size-base * 1.2)) !default;
+$font-size-small: ceil(($font-size-base * 0.9)) !default; // ~12px
+$font-size-small-lg: floor(($font-size-base * 0.85)) !default; // ~10px
+$font-size-small-md: ceil(($font-size-base * 0.8)) !default; // ~9px
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// mobile font size
+$font-size-h1-sm: floor(($font-size-base * 2)) !default; // ~36px
+$font-size-h2-sm: floor(($font-size-base * 1.8)) !default; // ~30px
+$font-size-h3-sm: ceil(($font-size-base * 1.4)) !default; // ~24px
+$font-size-h4-sm: ceil(($font-size-base * 1.15)) !default; // ~18px
+$font-size-h5-sm: $font-size-base !default;
+$font-size-h6-sm: ceil(($font-size-base * 0.75)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(
+  ($font-size-base * $line-height-base)
+) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+
+// border radius
+$b-radius: 5px;
+$b-radius-sm: floor(($b-radius * 2)) !default;
+$b-radius-md: floor(($b-radius * 5)) !default;
+$b-radius-lg: floor(($b-radius * 10)) !default;
+
+$border-width: 1px !default;
+$border-color: #ebe9f1 !default;
+$border-radius: 0.357rem !default;
+$border-radius-lg: 0.6rem !default;
+$border-radius-sm: 0.25rem !default;
+
+// box-shadow
+$box-shadow-wt-sm: 0px 4px 24px rgba(0, 0, 0, 0.1);
+
+//chat
+$chat-head-footer-height: 65px;
+
+$chat-sidebar-width: 360px !default;

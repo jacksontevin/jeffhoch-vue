@@ -1,0 +1,40 @@
+.go-back {
+  font-family: $font_gilroy_medium;
+  font-size: $font-size-xlarge;
+  color: color(orange);
+  display: flex;
+  align-items: center;
+}
+.eb-btn-success {
+  background: #63e061;
+  border-radius: 6px;
+  color: color(white);
+}
+.eb-btn-danger {
+  background: #f36f56;
+  border-radius: 6px;
+  color: color(white);
+}
+.attached-photos-title {
+  color: color(grey03);
+  font-size: 24px;
+  font-family: $font_gilroy_bold;
+}
+.broker-attached-photos {
+  width: 100%;
+  min-height: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: color(grey-500);
+  @include max-rwd(992, 1290) {
+    height: auto;
+  }
+}
+.admin-properties-detail {
+  .property-part-2 {
+    &::before {
+      display: none;
+    }
+  }
+}

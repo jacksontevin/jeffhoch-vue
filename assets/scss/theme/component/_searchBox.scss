@@ -1,0 +1,18 @@
+.eb-search-box {
+    position: relative;
+    width: 100%;
+    .eb-input {
+      width: 100%;
+      input {
+        @include eb-from-control(search-box);
+      }
+    }
+    .eb-search-btn {
+      position: absolute;
+      right: 9px;
+      top: 8px;
+      .btn-link {
+        padding: 10px 20px;
+      }
+    }
+  }

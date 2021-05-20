@@ -1,0 +1,138 @@
+.admin-broker-section {
+  .admin-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include max-rwd(280, 1024) {
+      flex-direction: column;
+      width: 100%;
+    }
+    h2 {
+      color: color(grey03);
+      font-family: $font_gilroy_bold;
+      @include max-rwd(280, 1024) {
+        width: 100%;
+        text-align: left;
+      }
+    }
+    .action-right {
+      width: 55%;
+      @include max-rwd(280, 992) {
+        width: 100%;
+      }
+    }
+    .action-right-lg {
+      width: 80%;
+      @include max-rwd(280, 992) {
+        width: 100%;
+      }
+    }
+  }
+  .broker-profile {
+    padding: 30px 10px;
+    .user-profile {
+      margin-bottom: 20px;
+      h6 {
+        font-family: $font_gilroy_bold;
+        color: color(grey03);
+      }
+      small {
+        color: color(black);
+        font-size: 12px;
+        font-family: $font_gilroy_regular;
+      }
+    }
+    p {
+      padding: 5px;
+      font-family: $font_gilroy_medium;
+    }
+  }
+  .right-border-section {
+    position: relative;
+    &::after {
+      background-color: color(gray-light-bg);
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 78%;
+      top: 33px;
+      right: 33px;
+    }
+    @include max-rwd(280, 767) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .about-us {
+    padding: 30px 10px 10px 10px;
+    h4 {
+      font-family: $font_gilroy_bold;
+      color: color(grey03);
+    }
+    p {
+      color: color(gray-700);
+      font-size: $font-size-base;
+    }
+  }
+  .status-counter {
+    display: flex;
+    padding: 10px 10px 30px 10px;
+    @include max-rwd(280, 991) {
+      flex-direction: column;
+    }
+    .counter-total {
+      color: color(grey03);
+      font-size: $font-size-base;
+      display: flex;
+      align-items: center;
+      margin: 5px 30px 5px 5px;
+      @include max-rwd(280, 1024) {
+        justify-content: space-between;
+      }
+      h4 {
+        margin-bottom: 0px;
+        color: color(grey03);
+        font-family: $font_gilroy_medium;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .counter-value {
+        background-color: color(orange);
+        // padding: 10px;
+        border-radius: 9999px;
+        color: color(white);
+        font-family: $font_gilroy_bold;
+        font-size: $font-size-base;
+        min-width: 30px;
+        line-height: inherit;
+
+        // background-color: #F36F56;
+        // border-radius: 100%;
+        // padding-top: 15px;
+        // padding-right: 15px;
+        // padding-bottom: 15px;
+        // padding-left: 15px;
+        // color: #ffffff;
+        // font-family: Gilroy-Bold;
+      }
+    }
+  }
+  label {
+    font-size: $font-size-large;
+    font-family: $font_gilroy_medium;
+    color: color(black);
+  }
+  .border-dropdown {
+    background: #ffffff;
+    border: 1px solid #f36f56;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .auth-icon {
+    top:10px !important;
+  }
+  .search-box-broker {
+      height: calc(1.8em + 0.75rem + 2px) !important;
+  }
+}

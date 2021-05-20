@@ -1,0 +1,181 @@
+//--------- Simple Number Wizard ----------//
+.vue-form-wizard {
+  //   background-color: color(white);
+  //   box-shadow: 0px 4px 25px 0px red;
+  //   border-radius: 0.5rem;
+  //   padding-bottom: 0;
+  .wizard-header {
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    // color: red;
+  }
+  .wizard-navigation {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    .wizard-progress-with-circle {
+      //   display: none;
+      position: relative;
+      top: 20px !important;
+      height: 4px;
+    }
+    .wizard-nav {
+      //   padding: 1.42rem 1.42rem 2.14rem 1.42rem;
+      //   border-bottom: 1px solid red;
+      //   padding-bottom: 0;
+      li {
+        flex-grow: 0;
+        flex: inherit;
+        margin-right: 0rem;
+        padding-bottom: 2rem;
+        &.active {
+          a {
+            color: black;
+            .wizard-icon-circle {
+              .wizard-icon-container {
+                outline: none;
+                .wizard-icon {
+                  color: color(white);
+                  font-size: 1rem;
+                }
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+            .checked {
+              box-shadow: 0 3px 6px 0 rgba(105, 108, 255, 0.4);
+            }
+          }
+        }
+        .wizard-icon-circle {
+          width: 1.71rem;
+          height: 1.71rem;
+          margin-right: 1rem;
+          border: none;
+          background-color: color(gray-light-bg);
+          //   border-radius: 6px;
+
+          .wizard-icon-container {
+            outline: none;
+            border-radius: 60px;
+          }
+          .wizard-icon {
+            font-style: inherit;
+            font-size: 1rem;
+            color: color(white);
+            &.feather {
+              font-size: 1.3rem;
+            }
+          }
+          &.checked {
+            background-color: color(gray-light-bg);
+            .wizard-icon {
+              color: color(white);
+            }
+          }
+        }
+        a {
+          flex-direction: row;
+          .stepTitle {
+            font-size: 1rem;
+            color: color(black);
+            font-weight: 600;
+          }
+          .wizard-icon {
+            transition: none !important;
+          }
+        }
+        &:not(:first-child) {
+          a {
+            &::before {
+              //   content: '\e844';
+              //   font-family: feather !important;
+              //   speak: none;
+              //   font-style: normal;
+              //   font-weight: 400;
+              //   font-variant: normal;
+              //   text-transform: none;
+              //   line-height: 1;
+              //   font-size: 1.14rem;
+              //   left: -30px;
+              //   position: absolute;
+            }
+          }
+        }
+      }
+    }
+    .wizard-tab-content {
+      padding: 0px 20px 10px;
+      min-height: 420px;
+      max-height: 100%;
+      .wizard-tab-container {
+        .auth-form-group {
+          .eb-input-group {
+            .form-control {
+              padding-left: 0.375rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wizard-card-footer {
+    padding-bottom: 1rem;
+    .wizard-footer-left,
+    .wizard-footer-right {
+      .wizard-btn {
+        padding: 0.786rem 1.5rem;
+        min-width: unset;
+        border-radius: 5px;
+      }
+    }
+    .wizard-footer-left {
+      .wizard-btn {
+        // border: 1px solid red !important;
+        background-color: color(orange) !important;
+        // color: red !important;
+        font-weight: 400;
+        &:hover {
+          //   background-color: rgba(red, 0.04) !important;
+        }
+        &::before {
+          //   content: '\e843';
+          //   font-family: feather !important;
+          //   speak: none;
+          //   font-style: normal;
+          //   font-variant: normal;
+          //   text-transform: none;
+          //   line-height: 1;
+          //   font-size: 1rem;
+          //   left: -6px;
+          //   position: relative;
+        }
+      }
+    }
+    .wizard-footer-right {
+      .wizard-btn {
+        font-weight: 400;
+        &:hover {
+          //   box-shadow: 0 8px 25px -8px blue;
+        }
+        &::after {
+          //   content: '\e844';
+          //   font-family: feather !important;
+          //   speak: none;
+          //   font-style: normal;
+          //   font-weight: 400;
+          //   font-variant: normal;
+          //   text-transform: none;
+          //   line-height: 1;
+          //   font-size: 1rem;
+          //   right: -6px;
+          //   position: relative;
+        }
+      }
+    }
+  }
+}

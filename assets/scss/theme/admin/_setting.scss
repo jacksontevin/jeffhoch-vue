@@ -1,0 +1,33 @@
+.setting_check_box {
+  .setting-toggle-title {
+    font-family: $font_gilroy_medium;
+    color: color(black);
+    font-size: $font-size-xlarge;
+  }
+  .custom-control,
+  .custom-switch {
+    .custom-control-input:checked {
+      ~ .custom-control-label {
+        &::before {
+          border-color: color(text-orange) !important;
+          background-color: #fff !important;
+          left: -2.93rem;
+          width: 2.45rem;
+        }
+        &::after {
+          background-color: color(text-orange) !important;
+          left: calc(-2.25rem + 2px);
+        }
+      }
+    }
+    .custom-control-label {
+      &::before {
+        width: 2.45rem;
+        left: -2.93rem;
+      }
+      &::after {
+        left: calc(-2.85rem + 2px);
+      }
+    }
+  }
+}

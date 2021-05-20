@@ -1,0 +1,195 @@
+.about-section-page {
+  .about-section-header {
+    background-color: #193253;
+    padding: 116px 0px;
+    position: relative;
+    background-image: url('./assets/images/blog-slider.png');
+    background-repeat: no-repeat;
+    .about-title {
+      position: relative;
+      color: color(white);
+      padding-left: $font-size-xxlarge;
+      &::before {
+        content: '';
+        height: 60px;
+        width: 3px;
+        position: absolute;
+        background-color: #f36f56;
+        top: -8px;
+        left: 0;
+        border-radius: 8px;
+      }
+    }
+  }
+  .about-section-top {
+    padding: 170px 0px;
+    position: relative;
+    .container {
+      position: relative;
+      .about-us-info {
+        h4 {
+          color: color(dark-orange);
+          font-family: $font-Poppins;
+          font-weight: 500;
+          font-size: $font-size-xxlarge;
+        }
+        h3 {
+          color: color(dark-font);
+          font-family: $font_gilroy_bold;
+          font-size: $font-size-h1;
+          line-height: 42px;
+          margin-top: 10px;
+        }
+        p {
+          margin-top: 20px;
+          color: color(black);
+        }
+      }
+      &::after {
+        content: '';
+        width: 210px;
+        height: 100%;
+        background: url('~assets/images/shape.svg') no-repeat;
+        top: -71px;
+        right: -58px;
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+        @include max-rwd(280, 1192) {
+          display: none;
+        }
+      }
+    }
+    &::before {
+      content: '';
+      width: 141px;
+      height: 56%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      bottom: -71px;
+      left: -58px;
+      position: absolute;
+      display: inline-block;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+  .about-team-section {
+    text-align: center;
+    color: color(dark-font);
+    font-size: $font-size-h2;
+    font-family: $font_gilroy_bold;
+    position: relative;
+    .team-box {
+      // background: #F8F0EE;
+      // border-radius: 10px;
+      .team-img {
+        background: #f8f0ee;
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: 200px;
+        max-height: 334px;
+        img {
+          min-height: 300px;
+          height: 350px;
+        }
+      }
+      .team-body {
+        text-align: center;
+        h4 {
+          font-family: $font_gilroy_medium;
+          font-size: $font-size-xxlarge;
+          color: color(black);
+          margin-top: 10px;
+        }
+        h5 {
+          margin-top: 5px;
+          color: color(orange);
+          font-size: $font-size-large;
+          font-family: $font_gilroy_regular;
+        }
+      }
+    }
+    &::after {
+      content: '';
+      width: 62px;
+      height: 28%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      top: 289px;
+      right: 6px;
+      position: absolute;
+      display: inline-block;
+      z-index: 1;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+  }
+  .about-accordion {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      width: 60px;
+      height: 66%;
+      background: url('~assets/images/shape.svg') no-repeat;
+      position: absolute;
+      display: inline-block;
+      z-index: -1;
+      @include max-rwd(280, 1192) {
+        display: none;
+      }
+    }
+    &::before {
+      top: -204px;
+      left: -173px;
+    }
+    &::after {
+      bottom: -116px;
+      right: 25px;
+    }
+    .container {
+      .header-title {
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-top: 30px;
+        width: 50%;
+        @include max-rwd(280, 1192) {
+          width: 100%;
+        }
+      }
+      .accordion {
+        .accordion-list {
+          border-bottom: 2px solid rgba(250, 193, 182, 0.58);
+          &:last-child {
+            border-bottom: none;
+          }
+          .accordion-tab {
+            outline: none;
+            padding: 15px 0px;
+            img {
+              transition: 0.5s ease-in;
+            }
+            h3 {
+              font-size: 17px;
+              font-family: $font_gilroy_medium;
+              color: color(black);
+            }
+          }
+          .not-collapsed {
+            img {
+              transform: rotate(180deg);
+              transition: 0.5s ease-out;
+            }
+          }
+          .card-text {
+            padding-left: 35px;
+            padding: 10px 5px;
+          }
+        }
+      }
+    }
+  }
+}

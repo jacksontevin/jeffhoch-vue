@@ -1,0 +1,42 @@
+.chart-section {
+    padding: 20px;
+    h5 {
+        font-family: $font_gilroy_bold;
+        color: color(grey03);
+        font-size: $font-size-xxlarge;
+    }
+}
+//patch css
+.dashboard-card {
+  .eb-hm-card{
+    height: 90px;
+    margin-top: 14px;
+    border-radius: 12px;
+    border-width: 0px;
+  }
+  .eb-hm-card {
+    padding-left: 25px;
+    h1 {
+      margin-top: 5px;
+      font-size: 24px !important;
+      font-weight: 900;
+      line-height: 28.13px;
+      font-family: Gilroy-Bold;
+      position: relative;
+      top: 18px;
+    }
+    span {
+      font-family: Gilroy-Regular;
+      font-size: 16px;
+      line-height: 18.75px;
+      color: #D8654F;
+      margin-top: 10px;
+      position: relative;
+      top: 10px;
+    }
+    .right {
+      top: 35px;
+    }
+  }
+
+}
